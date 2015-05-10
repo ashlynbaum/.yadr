@@ -192,3 +192,4 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias fuck='$(thefuck $(fc -ln -1))'
