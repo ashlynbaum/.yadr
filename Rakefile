@@ -24,6 +24,7 @@ task :install => [:submodule_init, :submodules] do
     file_operation(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_vundle"].execute
   end
+  link_sublime_preference
 
   Rake::Task["install_prezto"].execute
 
@@ -363,4 +364,10 @@ def success_msg(action)
   puts "  (_______\_____|\____|_|      "
   puts ""
   puts "YADR has been #{action}. Please restart your terminal and vim."
+end
+
+def link_sublime_preference
+  source = "#{ENV['PWD']}/Preferences.sublime-settings"
+  target = "~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
+   run %{ ln -nfs "#{source}" "#{target}" }
 end
