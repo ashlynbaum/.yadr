@@ -2,7 +2,7 @@
 	"auto_complete_delay": 25,
 	"bold_folder_labels": true,
 	"caret_style": "blink",
-	"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -41,13 +41,13 @@
 		"log"
 	],
 	"font_face": "Menlo",
-	"font_size": 20,
+	"font_size": 17,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"indent_guide_options":
 	[
